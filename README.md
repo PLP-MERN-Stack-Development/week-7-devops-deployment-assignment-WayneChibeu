@@ -349,4 +349,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-**For more details, see the assignment instructions in `Week8-Assignment.md`.** 
+**For more details, see the assignment instructions in `Week7-Assignment.md`.** 
