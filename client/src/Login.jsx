@@ -20,7 +20,7 @@ const Login = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  let API_BASE_URL = import.meta.env.VITE_API_URL || 'https://week-8-capstone-waynechibeu.onrender.com';
+  let API_BASE_URL = import.meta.env.VITE_API_URL || 'https://week-7-devops-deployment-assignment-dxo6.onrender.com';
   if (!API_BASE_URL.endsWith('/api')) API_BASE_URL += '/api';
 
   const handleSubmit = async (e) => {

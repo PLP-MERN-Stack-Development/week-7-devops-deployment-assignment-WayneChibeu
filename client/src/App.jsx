@@ -17,7 +17,7 @@ import getTheme from './theme';
 
 function App() {
   // Use the deployed backend URL or fallback to environment variable
-  let API_BASE_URL = import.meta.env.VITE_API_URL || 'https://week-8-capstone-waynechibeu.onrender.com';
+  let API_BASE_URL = import.meta.env.VITE_API_URL || 'https://week-7-devops-deployment-assignment-dxo6.onrender.com';
   if (!API_BASE_URL.endsWith('/api')) API_BASE_URL += '/api';
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');

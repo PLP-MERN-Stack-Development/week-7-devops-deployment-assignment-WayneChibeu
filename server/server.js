@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
-const BACKEND_URL = process.env.BACKEND_URL || 'https://week-8-capstone-waynechibeu.onrender.com';
+const BACKEND_URL = process.env.BACKEND_URL || 'https://week-7-devops-deployment-assignment-dxo6.onrender.com';
 
 // Security middleware
 app.use(helmet());

@@ -1,4 +1,4 @@
-# Fitness Tracker – MERN Stack Capstone Project
+# Fitness Tracker – MERN Stack Assignment (Week 7)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -106,7 +106,7 @@
 ## Live Demo
 [Frontend Live App](https://client-xi-ochre-21.vercel.app)
 
-[Backend API](https://week-8-capstone-waynechibeu.onrender.com)
+[Backend API](https://week-7-devops-deployment-assignment-dxo6.onrender.com)
 
 ---
 
@@ -127,7 +127,7 @@
 1. Clone the repository:
    ```bash
    git clone <your-repo-url>
-   cd week-8-capstone_-WayneChibeu
+   cd week-7-devops-deployment-assignment-WayneChibeu
    ```
 2. Install dependencies for both client and server:
    ```bash
@@ -233,7 +233,7 @@ VITE_API_URL=http://localhost:5000
 
 ## Project Structure
 ```
-week-8-capstone_-WayneChibeu/
+week-7-devops-deployment-assignment-WayneChibeu/
   client/         # React frontend
     src/
       components/
@@ -268,7 +268,7 @@ week-8-capstone_-WayneChibeu/
 
 ## Deployment
 - **Frontend:** Deployed on Vercel ([Frontend Live App](https://client-xi-ochre-21.vercel.app))
-- **Backend:** Deployed on Render ([Backend API](https://week-8-capstone-waynechibeu.onrender.com))
+- **Backend:** Deployed on Render ([Backend API](https://week-7-devops-deployment-assignment-dxo6.onrender.com))
 - **Database:** MongoDB Atlas
 - Set environment variables in your deployment platform
 - Update `VITE_API_URL` in the frontend to point to your deployed backend

@@ -32,7 +32,7 @@ export default defineConfig({
     })
   ],
   define: {
-    'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL || 'https://week-8-capstone-waynechibeu.onrender.com/api'),
+    'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL || 'https://week-7-devops-deployment-assignment-dxo6.onrender.com/api'),
     'process.env': {},
     'process': {}
   },
