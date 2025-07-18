@@ -274,11 +274,37 @@ The backend is automatically deployed to Render on every push to the main branch
 
 ![Render Deployment Screenshot](images/render-deploy-screenshot.png)
 
-Sample deployment log:
+The frontend is automatically deployed to Vercel on every push to the main branch. Below is a screenshot of a successful Vercel deployment:
+
+![Vercel Deployment Screenshot](images/Vercel-logs-screenshot.png)
+
+GitHub Actions is used for CI/CD automation. Below is a screenshot of a successful workflow run:
+
+![GitHub Actions Workflow Screenshot](images/GitHub-workflow-screenshot.png)
+
+Sample Render deployment log:
 ```
 2025-07-18T09:46:46.936305541Z ==> Your service is live 🎉
 2025-07-18T09:46:47.047072493Z ==> Available at your primary URL https://week-7-devops-deployment-assignment-dxo6.onrender.com
 ...
+```
+
+Sample Vercel build log:
+```
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 12.26s
+PWA v1.0.1
+mode      generateSW
+precache  7 entries (799.19 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-3e8df8c8.js
+Build Completed in /vercel/output [17s]
+Deploying outputs...
+Deployment completed
+Uploading build cache [51.58 MB]...
+Build cache uploaded: 623.913ms
+Exiting build container
 ```
 
 ---
