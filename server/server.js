@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
-const BACKEND_URL = process.env.BACKEND_URL || 'https://week-7-devops-deployment-assignment-dxo6.onrender.com';
+const BACKEND_URL = process.env.BACKEND_URL || 'https://week-7-devops-deployment-dxo6.onrender.com';
 
 // Security middleware
 app.use(helmet());
@@ -42,10 +42,22 @@ const authLimiter = rateLimit({
 // NOTE: Relaxed for development. Revert to stricter settings for production!
 
 // CORS configuration
+const allowedOrigins = [
+  'https://client-xi-ochre-21.vercel.app', // deployed frontend
+  'http://localhost:5173', // local dev
+  'http://localhost:3000', // local dev (alt)
+  'http://localhost:4173'  // local dev (alt)
+];
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL] 
-    : ['http://localhost:5173', 'http://localhost:3000', 'http://localhost:4173'],
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps, curl, etc.)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   optionsSuccessStatus: 200
 };

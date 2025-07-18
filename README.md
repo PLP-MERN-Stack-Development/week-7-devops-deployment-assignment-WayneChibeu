@@ -7,7 +7,6 @@
 - [Tech Stack](#tech-stack)
 - [Screenshots](#screenshots)
 - [Live Demo](#live-demo)
-- [Video Demo](#video-demo)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -107,11 +106,6 @@
 [Frontend Live App](https://client-xi-ochre-21.vercel.app)
 
 [Backend API](https://week-7-devops-deployment-assignment-dxo6.onrender.com)
-
----
-
-## Video Demo
-[![Watch the video demo](https://img.shields.io/badge/Watch%20Video%20Demo-Google%20Drive-blue?logo=google-drive)](https://drive.google.com/file/d/1IwoDStMZtYlLe05517pVsdfI-Q8obqZj/view?usp=sharing)
 
 ---
 
