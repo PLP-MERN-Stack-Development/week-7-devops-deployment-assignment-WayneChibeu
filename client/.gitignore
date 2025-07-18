@@ -1,0 +1,54 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+public/build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Icon?
+
+# pnpm
+pnpm-lock.yaml
+
+# Ignore server build and dependencies if present in monorepo
+server/node_modules/
+server/dist/
+
+# Ignore client build and dependencies if present in monorepo
+client/node_modules/
+client/dist/
+
+# Ignore root-level build and dependencies if present
+/node_modules/
+/dist/
+.vercel
