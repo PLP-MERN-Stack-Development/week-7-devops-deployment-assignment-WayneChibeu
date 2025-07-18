@@ -265,7 +265,21 @@ week-7-devops-deployment-assignment-WayneChibeu/
 - **Backend:** Deployed on Render ([Backend API](https://week-7-devops-deployment-assignment-dxo6.onrender.com))
 - **Database:** MongoDB Atlas
 - Set environment variables in your deployment platform
-- Update `VITE_API_URL` in the frontend to point to your deployed backend
+
+---
+
+## CI/CD Pipeline
+
+The backend is automatically deployed to Render on every push to the main branch. Below is a screenshot of a successful deployment:
+
+![Render Deployment Screenshot](images/render-deploy-screenshot.png)
+
+Sample deployment log:
+```
+2025-07-18T09:46:46.936305541Z ==> Your service is live 🎉
+2025-07-18T09:46:47.047072493Z ==> Available at your primary URL https://week-7-devops-deployment-assignment-dxo6.onrender.com
+...
+```
 
 ---
 
